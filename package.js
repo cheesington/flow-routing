@@ -1,12 +1,12 @@
 Package.describe({
-  name: 'mealsunite:flow-routing-extra',
+  name: 'useraccounts:flow-routing',
   summary: 'UserAccounts package providing routes configuration capability via ostrio/flow-router-extra.',
-  version: '2.0.2',
-  git: 'https://github.com/MealsUnite/flow-routing.git',
+  version: '1.14.2_2',
+  git: 'https://github.com/cheesington/flow-routing.git',
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.3');
+  api.versionsFrom('METEOR@1.5');
 
   api.use([
     'check',
@@ -18,7 +18,7 @@ Package.onUse(function(api) {
   ], ['client', 'server']);
 
   api.imply([
-    'ostrio:flow-router-extra@3.4.0',
+    'ostrio:flow-router-extra@3.7.3_1',
     'useraccounts:core@1.14.2',
   ], ['client', 'server']);
 
